@@ -46,7 +46,7 @@ export class CartService {
 
   checkOut(id:string |null, orderInfo:object):Observable<any>{
     return this._HttpClient.post(this.baseUrl +
-      `/api/v1/orders/checkout-session/${id}?url=http://localhost:4200`,
+      `/api/v1/orders/checkout-session/${id}?url=https://github.com/AhmedElsoudy/Fresh-Cart.git`,
       {
         shippingAddress:orderInfo
       }
